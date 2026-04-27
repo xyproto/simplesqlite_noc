@@ -26,7 +26,7 @@ func TestLocalConnection(t *testing.T) {
 	//err := TestConnection() // default filename
 	err := TestConnectionFile("sqlite.db")
 	if err != nil {
-		t.Errorf(err.Error())
+		t.Error(err)
 	}
 }
 
